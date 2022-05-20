@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "fonts";
+  font-style: normal;
+  font-weight: 400;
+  src: url(./fonts.woff) format("woff");
+}
+
+body {
+  font-family: "fonts", sans-serif;
+}
+
+.form-check-label {
+  cursor: pointer;
+}

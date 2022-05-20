@@ -1,5 +1,5 @@
 {
-  "name": "cal-app",
+  "name": "greenhills-bookings-calendar",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.20.5",
     "axios": "^0.27.2",
+    "bootstrap": "^5.2.0-beta1",
     "collect.js": "^4.33.0",
     "date-fns": "^2.28.0",
     "react": "^18.1.0",

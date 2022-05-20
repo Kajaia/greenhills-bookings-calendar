@@ -1,23 +1,21 @@
-import "./App.css";
+import { useEffect, useState } from "react";
+import BookingList from "./components/BookingList";
 import axios from "axios";
-import { useEffect } from "react";
-import Mypost from "./Mypost";
-import { useState } from "react";
 
 function App() {
-  const [post, setPosts] = useState("");
+  const [bookings, setBookings] = useState("");
   const apiEndPoint = "https://greenhills.ge/bookinglist?format=json";
   useEffect(() => {
-    const getPosts = async () => {
+    const getBookings = async () => {
       const { data: res } = await axios.get(apiEndPoint);
-      setPosts(res);
+      setBookings(res);
     };
-    getPosts();
+    getBookings();
   }, []);
 
   return (
     <div className="App">
-      <Mypost post={post} />
+      <BookingList bookings={bookings} />
     </div>
   );
 }
